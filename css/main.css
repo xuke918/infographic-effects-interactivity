@@ -27,17 +27,17 @@ svg {
   margin: 0 auto;
 }
 
-.increased {
+.glass {
   opacity: 0;
   transition: all 200ms ease-in;
 }
 
-.js-increased-animate {
+.js-glass-animate {
   opacity: 1;
-  animation: increased 250ms linear;
+  animation: glass 250ms linear;
 }
 
-@keyframes increased {
+@keyframes glass {
 
   0% {
     transform: rotate(0);
