@@ -19,7 +19,7 @@ html {
 h1 {
   line-height: 1;
   font-size: .5em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   background-color: #f3e5e3;
   padding-top: 0.5em;
@@ -74,4 +74,39 @@ svg {
 
 .map:hover {
   fill: #bfd8d0;
+}
+
+.hook {
+  animation-duration: 1s;
+  animation-name: bounceIn;
+}
+
+@keyframes bounceIn {
+
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  40% {
+    transform: scale(.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+
+  80% {
+    transform: scale(.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
