@@ -16,6 +16,18 @@ html {
   box-sizing: inherit;
 }
 
+h1 {
+  line-height: 1;
+  font-size: .5em;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: #f3e5e3;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 0;
+  color: #9b1c1f;
+}
+
 body {
   margin: 0;
 }
