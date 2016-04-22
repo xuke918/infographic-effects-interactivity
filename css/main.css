@@ -39,34 +39,6 @@ svg {
   margin: 0 auto;
 }
 
-.waterdrop {
-  opacity: 0;
-  transition: all 200ms ease-in;
-}
-
-.js-waterdrop-animate {
-  opacity: 1;
-  animation: waterdrop 250ms linear;
-}
-
-@keyframes waterdrop {
-
-  0% {
-    transform: rotate(0);
-  }
-
-  33% {
-    transform: rotate(15deg);
-  }
-
-  66% {
-    transform: rotate(-15deg);
-  }
-
-  100% {
-    transform: rotate(0);
-  }
-}
 
 .map {
   transition: all 250ms ease-out;
