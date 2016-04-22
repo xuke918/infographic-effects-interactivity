@@ -49,20 +49,34 @@ svg {
 }
 
 .hook {
-  transition: all 250ms linear;
-}
-
-.hook:hover {
   animation: bounceIn 1s;
+  transition: all 250ms linear;
 }
 
 @keyframes bounceIn {
 
   0% {
-    transform: scale(1.03);
+    opacity: 0;
+    transform: scale(.03);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(0.9);
   }
 
   80% {
-    transform: scale(.97);
+    transform: scale(1.03);
   }
+}
+
+.glass {
+  transform: translateX(100px);
+}
+
+.glass:hover {
+  animation: rotate 1s;
 }
