@@ -39,7 +39,6 @@ svg {
   margin: 0 auto;
 }
 
-
 .map {
   transition: all 250ms ease-out;
 }
@@ -69,7 +68,7 @@ svg {
 
 .head {
   animation: slideInLeft 1s;
-  transform: translateX(0px);
+  transform: translateX(0.5px);
 }
 
 @keyframes slideInLeft {
