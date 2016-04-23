@@ -82,3 +82,51 @@ svg {
     transform: translate(0);
   }
 }
+
+.btn {
+  cursor: pointer;
+  transition: all .5s linear;
+  background-color: #f15c07;
+}
+
+.lines path {
+  stroke-dasharray: 0, 480;
+  animation: all 2s linear;
+}
+
+.is-engaged .engage path:nth-child(2) {
+  transition: all .5s ease;
+  fill: #f16369;
+}
+
+.is-engaged .engage path:nth-child(1) {
+  transition: all .5s ease;
+  fill: #65c7c4;
+}
+
+.engage path:nth-child(2) {
+  transition-delay: .5s;
+}
+
+.is-engaged .lines path {
+  animation: draw .5s linear forwards;
+}
+
+@keyframes draw {
+
+  0% {
+    stroke-dasharray: 0, 480;
+  }
+
+  100% {
+    stroke-dasharray: 550, 550;
+  }
+}
+
+.is-engaged .btn path:nth-child(2) {
+  fill: black;
+}
+
+.btn path:last-child:hover {
+  fill: #fabfb7;
+}
