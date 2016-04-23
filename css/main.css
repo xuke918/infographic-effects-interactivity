@@ -73,10 +73,19 @@ svg {
   }
 }
 
-.glass {
-  transform: translateX(100px);
+.head {
+  animation: slideInLeft 1s;
+  transform: translateX(0px);
 }
 
-.glass:hover {
-  animation: rotate 1s;
+@keyframes slideInLeft {
+
+  from {
+    transform: translate(-100%);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate(0);
+  }
 }
