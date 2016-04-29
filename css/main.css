@@ -333,6 +333,9 @@ svg {
   }
 }
 
+.age {
+  cursor: pointer;
+}
 
 .square {
   transition: all 1s ease;
