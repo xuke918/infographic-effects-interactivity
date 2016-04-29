@@ -40,6 +40,25 @@ svg {
   margin: 0 auto;
 }
 
+.modern {
+  animation: fadeInDown 1s;
+  transition: all 250ms linear;
+  background-color: inherit;
+}
+
+@keyframes fadeInDown {
+
+  0% {
+    opacity: 0;
+    transform: translate(-2000);
+  }
+
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}
+
 .map {
   transition: all 250ms ease-out;
 }

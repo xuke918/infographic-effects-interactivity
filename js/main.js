@@ -40,7 +40,6 @@ $('.btn').on('click', function () {
   }
 });
 
-
 $('.age').on('click', function(e) {
   $(this).addClass('is-clicked');
 });
