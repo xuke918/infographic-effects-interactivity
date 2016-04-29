@@ -94,6 +94,7 @@ svg {
   to {
     transform: translate(0);
   }
+  
 }
 
 
@@ -234,7 +235,7 @@ svg {
   animation: ethnicity 250ms linear;
 }
 
-@keyframes ethnicity{
+@keyframes ethnicity {
 
   0% {
     transform: rotate(0);
@@ -262,7 +263,7 @@ svg {
   animation: salary 250ms linear;
 }
 
-@keyframes salary{
+@keyframes salary {
 
   0% {
     transform: rotate(0);
