@@ -65,7 +65,7 @@ svg {
 
 .map:hover {
   fill: #bfd8d0;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .hook {
@@ -193,35 +193,43 @@ svg {
 
 #bar-rn-1 {
   animation-delay: 100ms;
+  transform-origin: 200px 0;
 }
 
 #bar-rn-2 {
   animation-delay: 200ms;
+  transform-origin: 200px 0;
 }
 
 #bar-rn-3 {
   animation-delay: 250ms;
+  transform-origin: 200px 0;
 }
 
 #bar-rn-4 {
   animation-delay: 300ms;
+  transform-origin: 200px 0;
 }
 
 #bar-rn-5 {
   animation-delay: 350ms;
+  transform-origin: 200px 0;
 }
 
-.bar-wrap {
+#bar-rn-6 {
+  animation-delay: 350ms;
+  transform-origin: 200px 0;
+}
+
+.bar-wrap path {
   opacity: 0;
   transform-origin: 0 0;
-};
-
-.js-bar-animate .bar-wrap {
-  opacity: 1;
-  animation: bar-up 2s ease-out;
-  transform-origin: 0 350px;
 }
 
+.js-bar-animate .bar-wrap path {
+  opacity: 1;
+  animation: bar-up 2s ease-out;
+}
 
 @keyframes bar-up {
 
@@ -322,7 +330,7 @@ svg {
   animation: spin 1s ease;
 }
 
-@keyframes spin{
+@keyframes spin {
 
   0% {
     transform: rotate(0);
@@ -341,6 +349,7 @@ svg {
   transition: all 1s ease;
   cursor: pointer;
 }
+
 .is-clicked {
   fill: #f3e5e3;
 }

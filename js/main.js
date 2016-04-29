@@ -1,23 +1,25 @@
 var $length = $('#length');
 var lengthMax = parseInt($length.attr('data-max'), 10);
 var current = 0;
-var updateLength = function () {
+var updateLength;
+var updateTick;
+var $pinkboxes = $('.pinkboxes');
+var $data = $('.data');
+var $bar = $('.chart');
+
+updateLength = function () {
   current += 4000;
   $length.html(current);
   updateTick();
 };
 
-var updateTick = function () {
+updateTick = function () {
   if (current < lengthMax) {
     requestAnimationFrame(updateLength);
   }
 };
-var $pinkboxes = $('.pinkboxes');
-var $data = $('.data');
-var $bar = $('.chart');
 
 updateLength();
-
 
 $('.footer').on('click', function (e) {
   $('.footer').toggleClass('is-engaged');
@@ -43,7 +45,7 @@ $('.btn').on('click', function () {
   }
 });
 
-$('.age').on('click', function(e) {
+$('.age').on('click', function (e) {
   $(this).addClass('is-clicked');
 });
 
