@@ -14,6 +14,7 @@ var updateTick = function () {
 };
 var $pinkboxes = $('.pinkboxes');
 var $data = $('.data');
+var $bar = $('.chart');
 
 updateLength();
 
@@ -57,3 +58,11 @@ $('.square').on('click', function (e) {
 $pinkboxes.on('click', function (e) {
   $data.toggleClass('show');
 });
+
+$bar.waypoint(function (direction) {
+  if (direction == 'down') {
+    $bar.addClass('js-bar-animate');
+  } else {
+    $bar.removeClass('js-bar-animate');
+  }
+}, {offset: '50%'});

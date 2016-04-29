@@ -65,6 +65,7 @@ svg {
 
 .map:hover {
   fill: #bfd8d0;
+  cursor: pointer
 }
 
 .hook {
@@ -133,12 +134,8 @@ svg {
   }
 }
 
-.phone {
-  animation:
-}
-
-
 .data {
+  cursor: pointer;
   opacity: 0;
 }
 
@@ -194,30 +191,37 @@ svg {
   fill: #fabfb7;
 }
 
-.bar-wrap-1 {
-  transform-origin: 0 right;
+#bar-rn-1 {
+  animation-delay: 100ms;
 }
 
-.bar-wrap-2 {
-  transform-origin: -230px 0;
+#bar-rn-2 {
+  animation-delay: 200ms;
 }
 
-.bar-wrap-3 {
-  transform-origin: -400px 0;
+#bar-rn-3 {
+  animation-delay: 250ms;
 }
 
-.bar-wrap-4 {
-  transform-origin: -400px 0;
+#bar-rn-4 {
+  animation-delay: 300ms;
 }
 
-.bar-wrap-5 {
-  transform-origin: -400px 0;
+#bar-rn-5 {
+  animation-delay: 350ms;
 }
 
+.bar-wrap {
+  opacity: 0;
+  transform-origin: 0 0;
+};
 
-.bar {
-  animation: bar-up 1s ease-out;
+.js-bar-animate .bar-wrap {
+  opacity: 1;
+  animation: bar-up 2s ease-out;
+  transform-origin: 0 350px;
 }
+
 
 @keyframes bar-up {
 
@@ -332,6 +336,7 @@ svg {
 
 .square {
   transition: all 1s ease;
+  cursor: pointer;
 }
 .is-clicked {
   fill: #f3e5e3;
