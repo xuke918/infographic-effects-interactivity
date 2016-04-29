@@ -96,6 +96,31 @@ svg {
   }
 }
 
+
+
+
+
+
+
+
+
+
+.blue {
+  animation: zoomIn .5s linear;
+}
+
+@keyframes zoomIn {
+
+  0% {
+    transform: scale(0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .btn {
   cursor: pointer;
   transition: all .5s linear;
@@ -192,16 +217,44 @@ svg {
   }
 }
 
-.pinkbox {
+.ethnicity {
   opacity: 0;
 }
 
-.js-pinkbox-animate {
+.js-ethnicity-animate {
   opacity: 1;
-  animation: pinkbox 250ms linear;
+  animation: ethnicity 250ms linear;
 }
 
-@keyframes pinkbox {
+@keyframes ethnicity{
+
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(30deg);
+  }
+
+  66% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.salary {
+  opacity: 0;
+}
+
+.js-salary-animate {
+  opacity: 1;
+  animation: salary 250ms linear;
+}
+
+@keyframes salary{
 
   0% {
     transform: rotate(0);

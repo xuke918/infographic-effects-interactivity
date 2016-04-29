@@ -31,6 +31,7 @@ $('.btn').on('click', function () {
     console.log('It isn’t a dinosaur!');
   }
 });
+
 $('.btn').on('click', function () {
   if ($(this).hasClass('dino')) {
     console.log('It’s a dinosaur!');
