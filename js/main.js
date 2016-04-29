@@ -12,6 +12,8 @@ var updateTick = function () {
     requestAnimationFrame(updateLength);
   }
 };
+var $pinkboxes = $('.pinkboxes');
+var $data = $('.data');
 
 updateLength();
 
@@ -49,5 +51,9 @@ $('.age').on('animationend', function (e) {
 });
 
 $('.square').on('click', function (e) {
-  $('.square').toggleClass('is-clicked')
+  $('.square').toggleClass('is-clicked');
+});
+
+$pinkboxes.on('click', function (e) {
+  $data.toggleClass('show');
 });

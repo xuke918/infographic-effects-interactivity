@@ -17,9 +17,9 @@ html:
     bestPractices: true
     outline: true
     has:
-      - 'link\[href="css/main\.css"\]'
-      - 'script\[src=\*"jquery"\]'
-      - 'script\[src="js/main\.js"\]'
+      - 'link[href="css/main.css"]'
+      - 'script[src*="jquery"]'
+      - 'script[src="js/main.js"]'
 
 css:
   - path: 'css/main.css'
