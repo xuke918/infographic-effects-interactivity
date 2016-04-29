@@ -193,32 +193,32 @@ svg {
 
 #bar-rn-1 {
   animation-delay: 100ms;
-  transform-origin: 200px 0;
+  transform-origin: 180px 0;
 }
 
 #bar-rn-2 {
   animation-delay: 200ms;
-  transform-origin: 200px 0;
+  transform-origin: 180px 0;
 }
 
 #bar-rn-3 {
   animation-delay: 250ms;
-  transform-origin: 200px 0;
+  transform-origin: 180px 0;
 }
 
 #bar-rn-4 {
   animation-delay: 300ms;
-  transform-origin: 200px 0;
+  transform-origin: 180px 0;
 }
 
 #bar-rn-5 {
   animation-delay: 350ms;
-  transform-origin: 200px 0;
+  transform-origin: 180px 0;
 }
 
 #bar-rn-6 {
   animation-delay: 350ms;
-  transform-origin: 200px 0;
+  transform-origin: 180px 0;
 }
 
 .bar-wrap path {
@@ -228,7 +228,7 @@ svg {
 
 .js-bar-animate .bar-wrap path {
   opacity: 1;
-  animation: bar-up 2s ease-out;
+  animation: bar-up 1s ease-out;
 }
 
 @keyframes bar-up {
