@@ -59,11 +59,11 @@ svg {
     transform: scale(.3);
   }
 
-  20% {
+  33% {
     transform: scale(1);
   }
 
-  40% {
+  66% {
     transform: scale(.9);
   }
 
@@ -160,5 +160,61 @@ svg {
 
   100% {
     transform: scaleX(1);
+  }
+}
+
+.pinkbox {
+  opacity: 0;
+}
+
+.js-pinkbox-animate {
+  opacity: 1;
+  animation: pinkbox 250ms linear;
+}
+
+@keyframes pinkbox {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(30deg);
+  }
+
+  66% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.pinkbox {
+  opacity: 0;
+}
+
+.js-pinkbox-animate {
+  opacity: 1;
+  animation: pinkbox 250ms linear;
+}
+
+@keyframes pinkbox {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(30deg);
+  }
+
+  66% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0);
   }
 }
