@@ -67,7 +67,6 @@ svg {
     transform: scale(.9);
   }
 
-
   80% {
     opacity: 1;
     transform: scale(1.05);
@@ -142,4 +141,24 @@ svg {
 
 .btn path:last-child:hover {
   fill: #fabfb7;
+}
+
+.bar-wrap {
+  transform-origin: 0 0;
+}
+
+.bar {
+  animation: bar-up 1s ease-out;
+  transform-origin: 0 0 250px;
+}
+
+@keyframes bar-up {
+
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
 }
