@@ -39,3 +39,16 @@ $('.btn').on('click', function () {
     console.log('It isn’t a dinosaur!');
   }
 });
+
+
+$('.age').on('click', function(e) {
+  $(this).addClass('is-clicked');
+});
+
+$('.age').on('animationend', function (e) {
+  $(this).removeClass('is-clicked');
+});
+
+$('.square').on('click', function (e) {
+  $('.square').toggleClass('is-clicked')
+});

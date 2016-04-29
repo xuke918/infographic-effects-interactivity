@@ -94,7 +94,6 @@ svg {
   to {
     transform: translate(0);
   }
-  
 }
 
 
@@ -280,4 +279,27 @@ svg {
   100% {
     transform: rotate(0);
   }
+}
+
+.is-clicked {
+  animation: spin 1s ease;
+}
+
+@keyframes spin{
+
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.square {
+  transition: all 1s ease;
+}
+.is-clicked {
+  fill: #f3e5e3;
 }
