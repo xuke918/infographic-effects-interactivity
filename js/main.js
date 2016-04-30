@@ -6,6 +6,7 @@ var updateTick;
 var $pinkboxes = $('.pinkboxes');
 var $data = $('.data');
 var $bar = $('.chart');
+var $symbols = $('.symbols');
 
 updateLength = function () {
   current += 4000;
@@ -68,3 +69,11 @@ $bar.waypoint(function (direction) {
     $bar.removeClass('js-bar-animate');
   }
 }, {offset: '50%'});
+
+$salary.waypoint(function (direction) {
+  if (direction == 'down') {
+    $symbols.addClass('js-symbols-animate');
+  } else {
+    $symbols.removeClass('js-symbols-animate');
+  }
+}, {offset: '70%'});

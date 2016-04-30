@@ -455,3 +455,12 @@ svg {
     transform: scale(1);
   }
 }
+
+.symbols {
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+
+.js-symbols-animate {
+  opacity: 1;
+}
