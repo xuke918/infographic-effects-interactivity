@@ -242,6 +242,57 @@ svg {
   }
 }
 
+.bar-wrap-2 path {
+  opacity: 0;
+  transform-origin: 0 0;
+}
+
+.js-bar-animate .bar-wrap-2 path {
+  opacity: 1;
+  animation: bar-up 1s ease-out;
+}
+
+@keyframes bar-up {
+
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+#bar-rn-7 {
+  animation-delay: 100ms;
+  transform-origin: 520px 0;
+}
+
+#bar-rn-8 {
+  animation-delay: 200ms;
+  transform-origin: 520px 0;
+}
+
+#bar-rn-9 {
+  animation-delay: 250ms;
+  transform-origin: 520px 0;
+}
+
+#bar-rn-10 {
+  animation-delay: 300ms;
+  transform-origin: 520px 0;
+}
+
+#bar-rn-11 {
+  animation-delay: 350ms;
+  transform-origin: 520px 0;
+}
+
+#bar-rn-12 {
+  animation-delay: 350ms;
+  transform-origin: 520px 0;
+}
+
 .pinkbox {
   opacity: 0;
 }
