@@ -439,3 +439,19 @@ svg {
     transform: translate(0, 0);
   }
 }
+
+.waterdrop {
+  animation: pulse 1s linear infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes pulse {
+
+  0% {
+    transform: scale(.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
