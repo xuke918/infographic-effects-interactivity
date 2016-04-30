@@ -404,3 +404,19 @@ svg {
 .is-clicked {
   fill: #f3e5e3;
 }
+
+.glass {
+  animation: pulse 2s linear infinite alternate;
+  transform-origin: left;
+}
+
+@keyframes pulse {
+
+  0% {
+    transform: scale(.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
