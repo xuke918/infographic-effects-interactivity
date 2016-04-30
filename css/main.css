@@ -117,7 +117,7 @@ svg {
   }
 }
 
-.waterdrop {
+.cards {
   animation: zoomIn 2s;
   transform-origin: center;
 }
